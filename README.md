@@ -1,3 +1,3 @@
 # bitS
-some stupidness
+some stupidness /p
 Sublime push! try again!
