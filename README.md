@@ -1,3 +1,3 @@
 # bitS
 some stupidness
- Check Sublime push!
+ Check Sublime push! try again!
