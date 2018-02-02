@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;	
+}
+.pm {
+	color: #000;
+}
+
+.tt {
+	color: #0f0;
+}
+
+.pm.tt {
+	color: #00f;
+}
+a:hover + span { 
+	color: #f00;
+	background: #00f;
+}
+
+#my {
+	text-align: center;
+}
+
+li {
+	text-shadow: -1px -1px 0 hsl(80, 70%, 35%),
+             -2px -2px 1px hsl(80, 70%, 35%);
+}
