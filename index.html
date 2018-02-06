@@ -126,7 +126,7 @@
   <h3 class="w3-center">PRICE</h3>
   <p class="w3-center"><em>Here are some numbers.</em></p><br>
  <div class="w3-responsive w3-container">
-  <table class="w3-table-all w3-centered w3-hoverable">
+  <table class="w3-table-all w3-centered w3-hoverable no-user-select">
 	  	<tr class="w3-blue ">
 	  		<th></th>
 	  		<th>Наименование услуги</th>
@@ -135,15 +135,47 @@
 	  	
 		</tr>
 		<tr>
-			<td><input class="w3-check" type="checkbox" name=""></td>
-			<td>Выезд к заказчику в пределах города</td>
-			<td>бесплатно</td>
-			<td>Выезд специалиста в оговоренное время по городу</td>
+			<td><input class="w3-check" type="checkbox" id="check-10" name="" value=""></td>
+			<td><label for="check-10">Выезд к заказчику в пределах города</label></td>
+			<td><label for="check-10">бесплатно</label></td>
+			<td><label for="check-10">Выезд специалиста в оговоренное время по городу</label></td>
 		</tr>
   </table>
-</div>
+	 <div>
+	  	<button class="w3-btn w3-right w3-white w3-border w3-border-blue w3-padding-small" onclick="toggleFunction()">CHECK SUM</button>
+	</div>
 
 
+<script>
 
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 </body>
 </html>
